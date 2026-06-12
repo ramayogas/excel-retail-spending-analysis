@@ -17,12 +17,9 @@ The goal: **surface actionable insights about consumer spending habits** through
 
 | Finding | Insight |
 |---|---|
-| **Top spending category** | *(update with actual finding from your data)* |
-| **Peak spending period** | *(update with actual finding)* |
-| **Demographic pattern** | *(update with actual finding)* |
-| **Payment behavior** | *(update with actual finding)* |
-
-> 📝 *Update this table with your actual findings after analysis*
+| **Top spending category** | Smartwatch, Smartphone and Laptop |
+| **Demographic pattern** | Miami has the highest total sale while New York placed last |
+| **Payment behavior** | 40% of transaction is paid with PayPal, collecting $35.170,00 |
 
 ---
 
@@ -37,13 +34,13 @@ The goal: **surface actionable insights about consumer spending habits** through
 
 ## Dashboard
 
-> 📸 *Screenshot dashboard menyusul — file Excel tersedia di folder `/reports`*
+<img width="1015" height="882" alt="image" src="https://github.com/user-attachments/assets/163c9bf1-000c-4e35-99db-e3e1fd100fc2" />
 
 **Dashboard features:**
-- KPI Cards: Total transactions, avg spend per customer, top category, peak period
-- Spending by category (bar/column chart)
-- Trend over time (line chart)
-- Interactive slicers: Category, Gender, Age Group, Payment Method
+- KPI Cards: Total sales, total success order, average order value, top 3 best selling products
+- Payment method percentange (pie chart)
+- Total sales each location (bar chart)
+- Interactive slicers: Location
 
 ---
 
@@ -55,17 +52,20 @@ The goal: **surface actionable insights about consumer spending habits** through
 
 **2. Data Preparation (Power Query)**
 - Standardized column names and data types
-- Created calculated columns: `Age Group`, `Spending Tier`, `Month`
+- Created calculated columns: , `Month` and `Day`
 - Removed duplicate and incomplete transaction records
 
 **3. Analysis (Pivot Table)**
-- Calculated total and average spend by category, demographic, and time period
-- Identified top and bottom performing categories
-- Compared spending patterns across demographic segments
+- Analyzed sales patterns by month and day of the week
+- Evaluated revenue distribution by state and city
+- Ranked products by volume, revenue, and sales percentage.
+- Identified top customers by expenditure and order frequency.
+- Compared revenue and usage across payment methods.
+- Calculated total sales, order volume, and Average Order Value (AOV).
 
 **4. Visualization**
 - Single-page interactive dashboard
-- Slicers for dynamic filtering across all charts and KPIs
+- Dynamic slicer
 
 ---
 
@@ -74,9 +74,11 @@ The goal: **surface actionable insights about consumer spending habits** through
 ```
 excel-retail-spending-analysis/
 ├── data/
-│   └── consumer_trends_raw.csv     # Original dataset
+│   └── raw_amazon_sales_data 2025.xlxs     # Original dataset
+│   └── fix_amazon_transaction_all.xlxs     # Clean dataset
 ├── reports/
-│   └── retail_spending_analysis.xlsx  # Excel workbook + dashboard
+│   └── Amazon 2025 Sales Analysis (Dashboard + Dataset).xlsx  # Excel workbook + dashboard
+│   └── snapshot_consumer_trends.pdf # Dashboard snapshot in PDF
 └── README.md
 ```
 
