@@ -1,4 +1,6 @@
-# Retail Consumer Spending Analysis
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoft-excel&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat)
+
 **Tool:** Microsoft Excel (Power Query · Pivot Table · Dashboard)  
 **Domain:** Retail / Consumer Behavior  
 **Dataset:** [Consumer Trends Dataset — PayPal Miami (Kaggle)](https://www.kaggle.com/datasets/rabieelkharoua/the-miami-paypal-consumer-trends-dataset)
